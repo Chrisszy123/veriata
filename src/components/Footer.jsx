@@ -67,12 +67,12 @@ const Footer = () => {
               data-wow-delay="0.2s"
             >
               <img
-                src="assets/img/logo_footer.svg"
+                src="https://www.veritasecosystem.com/wp-content/uploads/2023/08/Group-1.png"
                 alt="logo"
                 className="cs-hide_dark"
               />
               <img
-                src="assets/img/logo_footer_white.svg"
+                src="https://www.veritasecosystem.com/wp-content/uploads/2023/08/Group-1.png"
                 alt="logo"
                 className="cs-hide_white"
               />

@@ -54,7 +54,7 @@ const About = () => {
               data-wow-duration="1s"
               data-wow-delay="0.4s"
             >
-              <img src="assets/img/about_img.svg" alt />
+              <img src="assets/img/about_img.svg" alt="about" />
             </div>
           </div>
         </div>

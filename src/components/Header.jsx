@@ -17,6 +17,7 @@ const Header = () => {
 		const response = await connectWallet();
 		if (response?.status) {
 			// window.location.reload();
+      setWallet(response?.res)
 		} else {
 			setConnectionStatus(false);
 			setErrorMssg(response?.res);
@@ -30,12 +31,12 @@ const Header = () => {
             <div className="cs-main_header_left">
               <a className="cs-site_branding cs-accent_color" href="index-2.html">
                 <img
-                  src="/assets/img/logo.svg"
+                  src="https://www.veritasecosystem.com/wp-content/uploads/2023/08/Group-1.png"
                   alt="Logo"
                   className="cs-hide_dark"
                 />
                 <img
-                  src="/assets/img/logo_white.svg"
+                  src="https://www.veritasecosystem.com/wp-content/uploads/2023/08/Group-1.png"
                   alt="Logo"
                   className="cs-hide_white"
                 />
@@ -172,7 +173,26 @@ const Header = () => {
                       d="M368 320a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"
                     ></path>
                   </svg>
-                  <span>Connect</span>
+                  <span>
+                  {connectionSatatus === false ? (
+														<>
+															{(walletAddress === "") | undefined | null ? (
+																<> Connect</>
+															) : (
+																<>
+																	{String(walletAddress).substring(0, 6) +
+																		"..." +
+																		String(walletAddress).substring(38)}
+																</>
+															)}
+															
+														</>
+													) : (
+														<>{String(walletAddress).substring(0, 6) +
+															"..." +
+															String(walletAddress).substring(38)}</>
+													)}
+                  </span>
                 </span>
               </div>
             </div>

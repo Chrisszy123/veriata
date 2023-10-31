@@ -14,23 +14,16 @@ import Footer from "./components/Footer";
 import Minter from  './components/Minter/Minter'
 
 function App() {
-  const [screenLoading, setScreenLoading] = useState(false);
-  useEffect(() => {
-    setScreenLoading(true);
-    setTimeout(() => {
-      setScreenLoading(false);
-    }, 1000);
-  }, []);
+  //const [screenLoading, setScreenLoading] = useState(false);
+  // useEffect(() => {
+  //   setScreenLoading(true);
+  //   setTimeout(() => {
+  //     setScreenLoading(false);
+  //   }, 1000);
+  // }, []);
 
   return (
     <>
-      {screenLoading ? (
-        <div className="cs-preloader cs-white_bg cs-center">
-          <div className="cs-preloader_in">
-            <img src="/assets/img/logo_mini.svg" alt="Logo" />
-          </div>
-        </div>
-      ) : (
         <div>
           <Header />
           <div className="cs-height_80 cs-height_lg_80"></div>
@@ -46,14 +39,14 @@ function App() {
           <Causes />
           <div className="cs-height_70 cs-height_lg_45"></div>
           <Minter />
-          <Team />
+          {/* <Team /> */}
           <Goals />
           {/* <Faq /> */}
           <Contact />
           <div className="cs-height_100 cs-height_lg_70"></div>
           <Footer />
         </div>
-      )}
+     
     </>
   );
 }

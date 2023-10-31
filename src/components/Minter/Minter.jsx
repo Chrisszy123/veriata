@@ -20,7 +20,8 @@ function Minter() {
       setCounter(parseInt(counter) + 1);
     }
   };
-  const mint = async (mntQnt) => {
+  const mintNft = async (mntQnt) => {
+    console.log(mntQnt)
     const response = await mint(mntQnt);
   };
 
@@ -130,9 +131,9 @@ function Minter() {
               alignItems: "center",
             }}
           >
-            <a href="#" className="cs-btn cs-btn_filed cs-accent_btn" style={{width: "60%"}}>
+            <div href="#" className="cs-btn cs-btn_filed cs-accent_btn" style={{width: "60%"}} onClick={() => mintNft(counter)}>
               <span>Mint Now</span>
-            </a>
+            </div>
           </div>
 
           <div
