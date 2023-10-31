@@ -49,7 +49,7 @@ const Header = () => {
                     <a href="#home" className="cs-smoth_scroll">
                       Home
                     </a>
-                    <ul>
+                    {/* <ul>
                       <li>
                         <a href="index-2.html">Default Home</a>
                       </li>
@@ -59,7 +59,7 @@ const Header = () => {
                       <li>
                         <a href="index-4.html">Home Version-3</a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li>
                     <a href="#about" className="cs-smoth_scroll">
@@ -71,22 +71,22 @@ const Header = () => {
                       Roadmap
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#team" className="cs-smoth_scroll">
                       Team
                     </a>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <a href="#faq" className="cs-smoth_scroll">
                       FAQ
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#contact" className="cs-smoth_scroll">
                       Contact
                     </a>
                   </li>
-                  <li className="menu-item-has-children">
+                  {/* <li className="menu-item-has-children">
                     <a href="#">Pages</a>
                     <ul>
                       <li>
@@ -96,7 +96,7 @@ const Header = () => {
                         <a href="blog-details.html">Blog Details</a>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
